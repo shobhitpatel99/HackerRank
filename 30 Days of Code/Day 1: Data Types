@@ -1,0 +1,43 @@
+  int a,r=0,q=0;
+
+char b[50],o[100];
+double c;
+scanf("%d%lf",&a,&c);
+scanf("%[^!]%*c",b);
+
+while(s[r]!='\0')
+    {
+    o[r]=s[r];
+    r++;
+    
+    }
+while(b[q]!='\0')
+    { 
+       {
+    o[r]=b[q];
+     r++;
+    q++;
+    }
+    }
+o[r++]='!';
+o[r++]='\0';
+
+q=0;
+while(o[q]!='\0')
+    {if(o[q]=='\n')
+    {r=q;
+        while(o[r]!='\0')
+    {
+     o[r]=o[r+1];
+            r++;
+     
+    }}
+    q++;
+    }
+
+
+printf("%d\n%.1f",a+i,(d+c));
+printf("\n%s",o);
+
+    
+

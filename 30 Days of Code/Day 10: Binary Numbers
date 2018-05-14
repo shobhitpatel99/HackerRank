@@ -1,0 +1,63 @@
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
+using namespace std;
+
+
+int main(){
+    int n,temp,a[100],longg[100],r,i=0;
+    cin >> n;
+    temp =n;
+    while(temp>0)
+        {
+r=temp%2;
+        temp=temp/2;
+        a[i]=r;
+        i++;
+        
+    }
+    longg[0]=0;
+    int l=0;
+    for(int j=0;j<=i;j++)
+        {   
+            if(a[j]==1&&a[j+1]==1)
+                {longg[l]=longg[l]+1;
+                 
+                
+               }
+        else
+            {l++;
+            longg[l]=0;
+            }
+    }
+    int max=longg[0];
+    for(int j=0;j<=l;j++)
+    {    if(max<longg[j])
+        {
+            max=longg[j];
+    }
+    }
+    cout<<max+1;
+    return 0;
+}
+

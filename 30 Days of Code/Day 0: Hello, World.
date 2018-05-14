@@ -1,0 +1,6 @@
+int main()
+    {char inputstr[10];
+   scanf ("%[^\n]%*c",inputstr);
+    printf("Hello, World.\n%s",inputstr);
+    return 0;
+    }
